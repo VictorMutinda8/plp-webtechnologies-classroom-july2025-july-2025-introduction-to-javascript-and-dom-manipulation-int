@@ -2,8 +2,8 @@
 // Part 1: Basics
 // ====================
 
-// Variable declarations and conditionals
-let userAge = 17;
+// Ask user for their age (input will be a string, so convert to number)
+let userAge = parseInt(prompt("Please enter your age:"));
 let message = "";
 
 if (userAge >= 18) {
@@ -14,7 +14,6 @@ if (userAge >= 18) {
 
 // Output result
 document.getElementById("part1-result").textContent = "Age check: " + message;
-
 
 // ====================
 // Part 2: Functions
@@ -75,3 +74,4 @@ document.getElementById("createElementBtn").addEventListener("click", function()
   li.textContent = "New dynamically added item";
   document.getElementById("dynamic-list").appendChild(li);
 });
+
